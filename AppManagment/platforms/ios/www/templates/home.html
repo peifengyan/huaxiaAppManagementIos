@@ -1,0 +1,129 @@
+<ion-view title="华夏保险">
+	<div class="padding home-header">
+		<!--
+		<div class="user">
+			<div class="uerBox">
+				<span class="user-info" ng-click="goUserInfo()">
+					<img src="{{info.icon}}"/>{{user.agentName}}
+					<i class="user-set"><img src="images/next.png" alt=""/></i>
+				</span>
+				<span class="user-mes" ng-click="goMsg()"><img src="images/mail.png" alt=""/><i>{{staffLen}}</i></span>
+			</div>
+		</div>
+		-->
+		<div class="home-logo"><img src="images/logo.png" alt=""/>
+			<span></span>
+		</div>
+	</div>
+	<ion-content class="bg has-top">
+		<div class="row padding info-view">
+			<div class="col weather">
+				<p class="date">
+					<span id="currentDate"></span>
+					<span class="sub-date" id="lunarDate"></span>
+				</p>
+				<!--<p>{{weatherMore}}</p>-->
+				<div class="weacher-list" style="overflow:hidden;">
+					<ul id="currentWea" style="float:left;">
+						<li class="curr-w">
+							<p class="w-addr">北京</p>
+
+							<div>
+								<div class="w-temp">
+									<p class="w-size">{{weatherCurrent.temperature}}<span>℃</span></p>
+
+									<p class="w-word">{{weatherCurrent.weather}}</p>
+								</div>
+								<img src="{{weatherCurrent.weatherImg}}"/>
+							</div>
+						</li>
+					</ul>
+					<ul id="otherWea" style="float:left;">
+						<li class="other-w" ng-repeat="weathers in weatherMore">
+							<p class="">{{weathers.date}}</p>
+
+							<p class=""><img src="{{weathers.img_small}}"/></p>
+
+							<p class="">{{weathers.lowest_temperature}} / {{weathers.highest_temperature}}</p>
+						</li>
+						<!--<li class="other-w">
+							<p class="">周三</p>
+							<p class=""><img src="images/weather.png"/></p>
+							<p class="">0<sup>o</sup> / 11<sup>o</sup></p>
+						</li>
+						<li class="other-w">
+							<p class="">周四</p>
+							<p class=""><img src="images/weather.png"/></p>
+							<p class="">16<sup>o</sup> / 22<sup>o</sup></p>
+						</li>
+						<li class="other-w">
+							<p class="">周五</p>
+							<p class=""><img src="images/weather.png"/></p>
+							<p class="">16<sup>o</sup> / 22<sup>o</sup></p>
+						</li>-->
+
+					</ul>
+
+				</div>
+			</div>
+			<!--
+			<div class="col col-20 per-info">
+				<ul>
+					<li>登录状态：{{user.isOnLine}}</li>
+					<li>代理人工号：{{user.agentCode}}</li>
+					<li>所属机构：{{user.organCode}}</li>
+					<li>所属渠道：{{user.branchType}}</li>
+				</ul>
+			</div>
+			-->
+		</div>
+		<div class="app-row" id="app-list-box">
+			<!--<div class="app-col" ng-repeat="app in appList" id="app.versionId" ng-click="download(app.ipaUrl)">
+				<div class="app-box">
+					<div class="app-item">
+						<p class="app-img"><img src="{{app.icon}}" alt=""/><p>
+						<span class="app-name">{{app.appName}}</span>
+					</div>
+					<div class="appdown-box show-appdown">
+						<p>{{app.ipaUrl}}</p>
+
+						<a href="" class="app-down">点击下载</a>
+						<img src="images/app_new.png" class="app-new">
+						<a href="" class="app-down">{{downText}}</a>
+						<img src="{{downImg}}" class="app-new">
+					</div>
+				</div>
+			</div>-->
+			<!--<div class="app-col" ng-click="download(1)">
+				<div class="app-box">
+					<div class="app-item">
+						<p class="app-img"><img src="images/item.png" alt=""/><p>
+						<span class="app-name">我的客户</span>
+					</div>
+					<div class="appdown-box show-appdown">
+						<p class="appdown-des">应用下载</p>
+						<a href="" class="app-down">点击下载</a>
+						<img src="images/app_new.png" class="app-new">
+					</div>
+				</div>
+			</div>
+
+			<div class="app-col" ng-click="download(2)">
+				<div class="app-box">
+					<div class="app-item">
+						<p class="app-img"><img src="images/item.png" alt=""/><p>
+						<span class="app-name">我的客户</span>
+					</div>
+					<div class="appdown-box show-appdown">
+						<p class="appdown-des">应用更新</p>
+						<a href="" class="app-down">点击更新</a>
+						<img src="images/app_update.png" class="app-update">
+					</div>
+				</div>
+			</div>
+			-->
+			<!--<div>{{downapp}}</div>-->
+			<!--<div ng-repeat="apps in all_app">{{apps.appId}}</div>-->
+		</div>
+	</ion-content>
+</ion-view>

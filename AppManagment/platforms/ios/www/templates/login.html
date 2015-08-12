@@ -1,0 +1,39 @@
+<ion-view title="">
+	<!--<ion-content>-->
+		<div class="login-content">
+			<div class="row login-row">
+				<div class="col col-45 login-left">
+					<div class="logo"><img src="images/logo.png" alt=""/></div>
+				</div>
+				<div class="col col-45 login-main">
+					<div class="login-box">
+						<div class="welecome-title">欢迎使用</div>
+<!-- 						<div class="login-form">
+							<div class="list list-inset">
+								<label class="item-border item-input">
+									<i class="icon ion-name placeholder-icon"></i><input id="userName" type="text" ng-model="user.agentCode" placeholder="用户名" autocapitalize="off"/>
+								</label>
+								<label class="item-border item-input">
+									<i class="icon ion-password placeholder-icon"></i>
+									<input id="userPwd" type="password" ng-model="user.password" placeholder="密码" style="ime-mode:disabled" autocapitalize="off" />
+								</label>
+								<div class="login-text-right" ng-click="findPassword()">
+									找回密码
+									<br/>
+								</div>
+							</div>
+						</div> -->
+					</div>
+
+				</div>
+				<div class="col col-10 login-right">
+					<div class="logo" ng-class="{'active':''!=user.userName &&''!=user.password}" ng-show="''!=user.userName &&''!=user.password"  ng-click="login(user)">
+						<img src="images/loginto.png" alt=""/>
+					</div>
+				</div>
+			</div>
+		</div>
+
+	<!--</ion-content>-->
+</ion-view>
+

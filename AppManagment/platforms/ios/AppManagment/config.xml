@@ -1,0 +1,126 @@
+<?xml version='1.0' encoding='utf-8'?>
+<widget id="com.ionicframework.appmanagment755926" version="0.0.1" xmlns="http://www.w3.org/ns/widgets" xmlns:cdv="http://cordova.apache.org/ns/1.0">
+    <preference name="AllowInlineMediaPlayback" value="false" />
+    <preference name="AutoHideSplashScreen" value="true" />
+    <preference name="BackupWebStorage" value="cloud" />
+    <preference name="DisallowOverscroll" value="false" />
+    <preference name="EnableViewportScale" value="false" />
+    <preference name="FadeSplashScreen" value="true" />
+    <preference name="FadeSplashScreenDuration" value=".25" />
+    <preference name="KeyboardDisplayRequiresUserAction" value="true" />
+    <preference name="MediaPlaybackRequiresUserAction" value="false" />
+    <preference name="ShowSplashScreenSpinner" value="true" />
+    <preference name="SuppressesIncrementalRendering" value="false" />
+    <preference name="TopActivityIndicator" value="gray" />
+    <preference name="GapBetweenPages" value="0" />
+    <preference name="PageLength" value="0" />
+    <preference name="PaginationBreakingMode" value="page" />
+    <preference name="PaginationMode" value="unpaginated" />
+    <feature name="LocalStorage">
+        <param name="ios-package" value="CDVLocalStorage" />
+    </feature>
+    <name>AppManagment</name>
+    <description>
+        An Ionic Framework and Cordova project.
+    </description>
+    <author email="hi@ionicframework" href="http://ionicframework.com/">
+      Ionic Framework Team
+    </author>
+    <content src="index.html" />
+    <access origin="*" />
+    <preference name="webviewbounce" value="false" />
+    <preference name="UIWebViewBounce" value="false" />
+    <preference name="DisallowOverscroll" value="true" />
+    <preference name="BackupWebStorage" value="none" />
+    <feature name="Keyboard">
+        <param name="ios-package" onload="true" value="IonicKeyboard" />
+    </feature>
+    <feature name="Console">
+        <param name="ios-package" value="CDVLogger" />
+    </feature>
+    <feature name="Device">
+        <param name="ios-package" value="CDVDevice" />
+    </feature>
+    <feature name="NetworkStatus">
+        <param name="ios-package" value="CDVConnection" />
+    </feature>
+    
+    <feature name="TableDataPlugin">
+        <param name="ios-package" value="TableDataPlugin" />
+    </feature>
+    <feature name="DatabasePlugin">
+        <param name="ios-package" value="DatabasePlugin" />
+    </feature>
+    <feature name="TablePlugin">
+        <param name="ios-package" value="TablePlugin" />
+    </feature>
+    <feature name="TableStructurePlugin">
+        <param name="ios-package" value="TableStructurePlugin" />
+    </feature>
+    <feature name="ViewControllerPlugin">
+        <param name="ios-package" value="ViewControllerPlugin" />
+    </feature>
+    <feature name="ContactsPlugin">
+        <param name="ios-package" value="ContactsPlugin" />
+    </feature>
+    <feature name="DownloadPlugin">
+        <param name="ios-package" value="DownloadPlugin" />
+    </feature>
+    <feature name="UserPlugin">
+        <param name="ios-package" value="UserPlugin" />
+    </feature>
+    <feature name="MessagePlugin">
+        <param name="ios-package" value="MessagePlugin" />
+    </feature>
+    <feature name="ConversationPlugin">
+        <param name="ios-package" value="ConversationPlugin" />
+    </feature>
+    <feature name="UploadPlugin">
+        <param name="ios-package" value="UploadPlugin" />
+    </feature>
+    <feature name="NQCommonPlugin">
+        <param name="ios-package" value="NQCommonPlugin" />
+    </feature>
+    <feature name="DeviceModelPlugin">
+        <param name="ios-package" value="DeviceModelPlugin" />
+    </feature>
+    <feature name="HttpRequestPlugin">
+        <param name="ios-package" value="HttpRequestPlugin" />
+    </feature>
+    <feature name="TransformPDFPlugin">
+        <param name="ios-package" value="TransformPDFPlugin" />
+    </feature>
+    <feature name="DatePickerDialogPlugin">
+        <param name="ios-package" value="DatePickerDialogPlugin" />
+    </feature>
+    <feature name="WXEntryPlugin">
+        <param name="ios-package" value="WXEntryPlugin" />
+    </feature>
+    <feature name="ApplicationCenterPlugin">
+        <param name="ios-package" value="ApplicationCenterPlugin" />
+    </feature>
+    <feature name="SaveImageToNativePlugin">
+        <param name="ios-package" value="SaveImageToNativePlugin" />
+    </feature>
+    <feature name="FileOperationPlugin">
+        <param name="ios-package" value="FileOperationPlugin" />
+    </feature>
+    <feature name="ScreenOrientationPlugin">
+        <param name="ios-package" value="ScreenOrientationPlugin" />
+    </feature>
+    <feature name="DeleteAllFilePlugin">
+        <param name="ios-package" value="DeleteAllFilePlugin" />
+    </feature>
+    
+    <!--    相册
+     拍照
+     清除缓存
+     -->
+    <feature name="PhotoPlugin">
+        <param name="ios-package" value="PhotoPlugin"/>
+    </feature>
+    <!--    地图  -->
+    <feature name="MapPlugin">
+        <param name="ios-package" value="MapPlugin"/>
+    </feature>
+</widget>

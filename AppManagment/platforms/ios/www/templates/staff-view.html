@@ -1,0 +1,22 @@
+<ion-view title="任务详情">
+	<ion-content class="has-header staff-bg">
+		<div class="staff-content">
+			<p class="staff-title">任务信息</p>
+			<div class="staff-view">
+				<table>
+					<tr>
+						<th>发布日期：</th>
+						<td>{{view.time}}</td>
+					</tr>
+					<tr>
+						<th>任务内容：</th>
+						<td>{{view.content}}</td>
+					</tr>
+				</table>
+			</div>
+		</div>
+	</ion-content>
+	<div class="bar bar-footer footer-btns">
+		<button class="button button-light-red pull-left footer-btn" ng-click="prev()">上一条</button><button class="button button-light-red pull-right footer-btn" ng-click="next()">下一条</button>
+	</div>
+</ion-view>

@@ -1,0 +1,63 @@
+<ion-view title="个人资料">
+	<ion-content>
+		<ion-list>
+			<ion-item class="item-image-right" ng-click="goAction()">
+				头像
+				<i class="ion-chevron-right margin-left20"></i>
+				<span id="user-photo" class="user-photo"><img src="{{info.icon}}"></span>
+			</ion-item>
+			<ion-item class="item-divider"></ion-item>
+			<ion-item>
+				业务员编号<span class="item-note"> {{userData.agentCode}}</span>
+			</ion-item>
+			<ion-item>
+				姓名<span class="item-note">{{userData.agentName}}</span>
+			</ion-item>
+			<ion-item>
+				性别<span class="item-note">{{userData.gender}}</span>
+			</ion-item>
+			<ion-item>
+				证件类型<span class="item-note">{{userData.idType}}</span>
+			</ion-item>
+			<ion-item>
+				证件号码<span class="item-note">{{userData.idNo}}</span>
+			</ion-item>
+			<ion-item>
+				电子邮箱<span class="item-note">{{userData.email}}</span>
+			</ion-item>
+			<ion-item>
+				移动电话<span class="item-note">{{userData.phone}}</span>
+			</ion-item>
+			<ion-item class="item-divider"></ion-item>
+			<ion-item>
+				机构代码<span class="item-note">{{userData.organId}}</span>
+			</ion-item>
+			<ion-item>
+				机构名称<span class="item-note">{{userData.organName}}</span>
+			</ion-item>
+			<ion-item>
+				业务员组<span class="item-note">{{userData.group}}</span>
+			</ion-item>
+			<ion-item>
+				业务员密码<span class="item-note"> <input style="height: 20px" type="password" value="{{userData.agentPassword}}"/></span>
+			</ion-item>
+			<ion-item>
+				业务员权限<span class="item-note">{{userData.permissionType}}</span>
+			</ion-item>
+			<ion-item>
+				业务员状态<span class="item-note">{{userData.state}}</span>
+			</ion-item>
+			<ion-item>
+				业务员帐户状态<span class="item-note">{{userData.accoutState}}</span>
+			</ion-item>
+			<ion-item>
+				业务员渠道<span class="item-note">{{userData.branchType}}</span>
+			</ion-item>
+		</ion-list>
+		<div>
+			<!--{{userData}}
+			<br/><br/>-->
+
+		</div>
+	</ion-content>
+</ion-view>

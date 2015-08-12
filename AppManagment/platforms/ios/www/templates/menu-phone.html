@@ -1,0 +1,40 @@
+<ion-view title="个人中心">
+		<header class="bar bar-header bar-red">
+			 <h1 class="title"><a class="back" nav-clear menu-close href="#/home">返回</a>个人中心</h1>
+		</header>
+		<ion-content class="has-header">
+			<div class="padding">
+				<div class="user-modal">
+					<img src="{{info.icon}}">
+					<h2>{{agentName}}</h2>
+					<!--<p>客户经理</p>-->
+				</div>
+			</div>
+			<div class="list">
+				<a class="item item-icon-left" ui-sref="app.user-info" ui-sref-active="current">
+					<i class="icon icon-man"></i>
+					个人资料
+				</a>
+				<a class="item item-icon-left" ui-sref="app.my-staff" ui-sref-active="current">
+					<i class="icon icon-staff"></i>
+					我的任务
+				</a>
+				<a class="item item-icon-left"  ui-sref="app.set" ui-sref-active="current">
+					<i class="icon icon-set"></i>
+					设置
+				</a>
+				<a class="item item-icon-left" ui-sref="app.help" ui-sref-active="current">
+					<i class="icon icon-help"></i>
+					帮助
+				</a>
+				<a class="item item-icon-left" ui-sref="app.update-password" ui-sref-active="current">
+					<i class="icon icon-password"></i>
+					修改密码
+				</a>
+				<a nav-clear menu-close class="item item-icon-left" ng-click="logout()">
+					<i class="icon icon-exit"></i>
+					退出登录
+				</a>
+			</div>
+		</ion-content>
+</ion-view>

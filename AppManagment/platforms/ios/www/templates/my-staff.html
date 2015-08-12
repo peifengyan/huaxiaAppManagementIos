@@ -1,0 +1,37 @@
+<ion-view title="我的任务">
+	<ion-content class="has-header">
+		<ion-list class="unread">
+			<ion-item ng-repeat="unread in itemsUnread" href="#/app/staff-view/{{unread.id}}">
+				<span class="item-note">
+				  {{unread.time}}
+				</span>
+				<h2>{{unread.title}}</h2>
+				<p>{{unread.content}}.</p>
+			</ion-item>
+		</ion-list>
+		<ion-list class="readed">
+			<ion-item ng-repeat="read in itemsReaded" href="#/app/staff-view/{{read.id}}">
+				<span class="item-note">
+				  {{read.time}}
+				</span>
+				<h2>{{read.title}}</h2>
+				<p>{{read.content}}.</p>
+			</ion-item>
+		</ion-list>
+			<!--<ion-item>
+				<span class="item-note">
+				  Grammy
+				</span>
+				<h2>Venkman</h2>
+				<p>Back off, man. I'm a scientist.</p>
+			</ion-item>
+			<ion-item>
+				<span class="item-note">
+				  Grammy
+				</span>
+				<h2>Venkman</h2>
+				<p>Back off, man. I'm a scientist.</p>
+			</ion-item>
+		</ion-list>-->
+	</ion-content>
+</ion-view>
